@@ -1,13 +1,12 @@
 :root{
     --Violet: hsl(257, 40%, 49%);
     --SoftMagenta: hsl(300, 69%, 71%);
-
 }
 
 body{
     font-family: "Open Sans", sans-serif;
     background-image: url('images/bg-desktop.svg');
-    background-color: hsl(257, 40%, 49%);
+    background-color: var(--Violet);
     background-repeat: no-repeat;
 }
 .container
@@ -48,10 +47,6 @@ body{
     color: white;
     margin:0rem 2rem
 }
-.title
-{
-
-}
 .text
 {
     line-height: 1.75rem;
@@ -60,6 +55,7 @@ body{
 }
 .register
 {
+    text-align: center;
     border-radius: 2rem;
     color:var(--Violet);
     padding:1rem 6rem;
