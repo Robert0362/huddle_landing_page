@@ -1,0 +1,124 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-image: url('images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+}
+.container
+{
+    background-image: url('images/bg-desktop.svg');
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'logo'    
+        'mockup'
+        'mockup'
+        'about'
+        'about'
+        ;
+    gap:.5rem;
+    margin:.5rem;
+}
+.logo
+{
+    grid-area: logo;
+    margin-top:.50rem;
+    margin-bottom: 2.5em;
+    width: 60%;
+}
+.boxOne
+{
+    grid-area: mockup;
+    margin-bottom: 2rem;
+}
+.mainPic
+{
+    max-width: 100%;
+}
+.boxTwo
+{
+    text-align: center;
+    grid-area: about;
+    color: white;
+    margin:0rem 2rem
+}
+.title
+{
+
+}
+.text
+{
+    line-height: 1.75rem;
+    font-size: 17px;
+    padding:.25rem;
+}
+.register
+{
+    border-radius: 2rem;
+    color:var(--Violet);
+    padding:1rem 6rem;
+    font-size:18px;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px hsl(256, 25%, 61%);
+    margin-top: 1rem;
+    border:0;
+
+}
+.register:hover
+{
+    color:white;
+    background-color: var(--SoftMagenta);
+}
+.socials
+{
+    padding:2rem
+}
+i
+{
+ margin:.5rem;   
+ padding:.75rem;
+ border:1px white solid;
+ border-radius: 50%;
+}
+i:hover{
+    color:white;
+    border:1px var(--SoftMagenta) solid;
+}
+@media only screen and (min-width: 600px) {
+    .container {
+        background-image: url('images/bg-desktop.svg');
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 1fr 1fr;
+        grid-template-areas: 
+        'logo   .'    
+        'mockup about'
+        'mockup about'
+       ;
+    margin:2.5rem;    
+  }
+  .logo{
+    margin-bottom:0rem;
+    max-height: 50%;
+  }
+  .boxTwo{
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+  }
+  .register{
+    display:inline-block;
+    width: 50%;
+    margin-bottom: 10rem;
+  }
+  .container div:last-child {
+    padding:2rem;
+    margin-left: auto;
+  }
+}
